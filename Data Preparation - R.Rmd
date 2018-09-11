@@ -37,7 +37,7 @@ Data manipulation includes variable-by-variable transformation (e.g., log or sqr
 
 3. Aggregate: collapsing multiple values into a single value (e.g., by summing or taking means).
 
-4.Sort: changing the order of observations.
+4. Sort: changing the order of observations.
 
 
 ```{r setup}
