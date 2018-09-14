@@ -54,8 +54,9 @@ library(dplyr)
 starwars_s <- select(starwars, name, gender) 
 kable(starwars_s[1:5,])
 ```
-![](blob/master/Images/starwars_s.PNG)
+![](Images/starwars_s.PNG?raw=true)
 
+```{r message=FALSE}
 #Select just rows with female as gender value
 starwars_f <- select(starwars, name:species)%>% 
   filter(gender == "female") 
