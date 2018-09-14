@@ -5,8 +5,12 @@ output: html_document
 editor_options:
   chunk_output_type: console
 ---
+> **Summary**
+1. [Tidy Data Concept](#tidy-data)
+2. [Dplyr: Select, Filter, Mutate, Summarize](#library-dplyr)
+3. [Tidyr: Gather, Spread](#library-tidyr)
 
-> **Tidy Data**
+### **Tidy Data**
 
 Tidy data is a standard way of mapping the meaning of a dataset to its structure. A dataset is messy or tidy depending on how rows, columns and tables are matched up with observations, variables and types. 
 In tidy data:
@@ -40,6 +44,8 @@ Data manipulation includes variable-by-variable transformation (e.g., log or sqr
 3. Aggregate: collapsing multiple values into a single value (e.g., by summing or taking means).
 
 4. Sort: changing the order of observations.
+
+### Library dplyr
 
 ```{r message=FALSE}
 # Manipulating Data using starwars data
@@ -79,6 +85,7 @@ kable(starwars_sz[1:5,])
 ```
 ![](Images/starwars_sz.PNG?raw=true)
 
+### Library tidyr
 
 Even is desired to have one variable per column sometimes we require the data to be in long format
 
