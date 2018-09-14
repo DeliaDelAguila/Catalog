@@ -53,6 +53,8 @@ library(dplyr)
 #Select just the columns name and gender from starwars data
 starwars_s <- select(starwars, name, gender) 
 kable(starwars_s[1:5,])
+```
+![](blob/master/Images/starwars_s.PNG)
 
 #Select just rows with female as gender value
 starwars_f <- select(starwars, name:species)%>% 
