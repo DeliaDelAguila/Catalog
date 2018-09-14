@@ -12,6 +12,7 @@ editor_options:
 
 2. [Quantitative Variables](#quantitative-variables)
 
+3. [Categorical Variables](#categorical-variables)
 
 ### **Data Visualization Overview**
 
@@ -28,11 +29,60 @@ We have different types of variables:
 
 ### Quantitative Variables
 
-> **Bar Char**
-
-```{r echo=FALSE}
+> **Histogram**
+```{r echo=FALSE, message=FALSE}
 library(dplyr)
 ```
+
+```{r message=FALSE, warning=FALSE}
+# For creating graphs
+library(ggplot2)
+
+#Frequency
+ggplot(starwars, aes(x = height)) + 
+  geom_histogram(fill = "#0E4D92", color = "white", bins = 10) +
+  labs(x = "Height", y = "Frequency", title = "Height of StarWars Characters") +
+  theme_minimal()
+```
+
+
+```{r message=FALSE, warning=FALSE}
+#Percentage
+ggplot(starwars, aes(x = height, y=..count.. / sum(..count..))) + 
+  geom_histogram(fill = "#0E4D92", color = "white", bins = 10) +
+  labs(x = "Height", y = "Percentage", title = "Height of StarWars Characters") +
+  scale_y_continuous(labels = scales::percent) +
+  theme_minimal()
+  
+```
+
+> **Density**
+
+```{r message=FALSE, warning=FALSE}
+#Percentage
+ggplot(starwars, aes(x = height, y=..count.. / sum(..count..))) + 
+  geom_density() +
+  labs(x = "Height", y = "Percentage", title = "Height of StarWars Characters") +
+  theme_minimal()
+  
+```
+
+> **Dot Chart**
+
+```{r message=FALSE, warning=FALSE}
+#Percentage
+ggplot(starwars, aes(x = height, y=..count.. / sum(..count..))) + 
+  geom_dotplot(fill = "gold", color = "black") +
+  labs(x = "Height", y = "Percentage", title = "Height of StarWars Characters") +
+  theme_minimal()
+  
+```
+
+### Categorical Variables
+
+> **Bar Char**
+
+
 
 ```{r message=FALSE}
 # For creating graphs
@@ -68,7 +118,8 @@ ggplot(starwars, aes(x = eye_color, y = ..count.. / sum(..count..))) +
   labs(x = "Eye Color", y = "Percent", title = "Eye Color of StarWars Characters") +
   scale_y_continuous(labels = scales::percent) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  coord_flip()
 
 ```
 
@@ -89,4 +140,6 @@ ggplot(eyec_orderp, aes(x = reorder(eye_color, -percentage), y = percentage)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+
+
 
