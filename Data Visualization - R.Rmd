@@ -44,7 +44,7 @@ ggplot(starwars, aes(x = height)) +
   labs(x = "Height", y = "Frequency", title = "Height of StarWars Characters") +
   theme_minimal()
 ```
-
+![](Images/Hist_Frequency.PNG?raw=true)
 
 ```{r message=FALSE, warning=FALSE}
 #Percentage
@@ -55,6 +55,7 @@ ggplot(starwars, aes(x = height, y=..count.. / sum(..count..))) +
   theme_minimal()
   
 ```
+![](Images/Hist_Percentage.PNG?raw=true)
 
 > **Density**
 
@@ -66,6 +67,8 @@ ggplot(starwars, aes(x = height, y=..count.. / sum(..count..))) +
   theme_minimal()
   
 ```
+![](Images/Density.PNG?raw=true)
+
 
 > **Dot Chart**
 
@@ -77,12 +80,12 @@ ggplot(starwars, aes(x = height, y=..count.. / sum(..count..))) +
   theme_minimal()
   
 ```
+![](Images/Dot.PNG?raw=true)
+
 
 ### Categorical Variables
 
 > **Bar Char**
-
-
 
 ```{r message=FALSE}
 # For creating graphs
@@ -95,6 +98,7 @@ ggplot(starwars, aes(x = eye_color)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
+![](Images/Bar_Frequency.PNG?raw=true)
 
 ```{r message=FALSE}
 #Reoprdering Data
@@ -109,6 +113,7 @@ ggplot(eyec_order, aes(x = reorder(eye_color,n), y=n)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+![](Images/Bar_Frequency_Ordered.PNG?raw=true)
 
 ```{r message=FALSE}
 
@@ -122,6 +127,7 @@ ggplot(starwars, aes(x = eye_color, y = ..count.. / sum(..count..))) +
   coord_flip()
 
 ```
+![](Images/Bar_Percentage.PNG?raw=true)
 
 ```{r message=FALSE}
 #Reordering Data
@@ -141,5 +147,6 @@ ggplot(eyec_orderp, aes(x = reorder(eye_color, -percentage), y = percentage)) +
 
 ```
 
+![](Images/Bar_Percentage_Ordered.PNG?raw=true)
 
 
