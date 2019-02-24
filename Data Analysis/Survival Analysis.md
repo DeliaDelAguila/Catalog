@@ -39,7 +39,7 @@ Let's review each of them.
 ### Exponetial 
 
 
- 
+ https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/pdf_exponential.png
 
  
  
