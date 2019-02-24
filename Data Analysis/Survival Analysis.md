@@ -3,6 +3,7 @@
 
 [Basic Quantities and Models](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/Survival%20Analysis.md#basic-quantities-and-models)
 * [Exponential Distribution](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/Survival%20Analysis.md#exponential-distribution)
+* [Weibull Distribution](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/Survival%20Analysis.md#weibull-distribution)
 
 ---
 ### Basic Quantities and Models
@@ -93,7 +94,7 @@ And its Survival function will be
   <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/survival_exponential.png" | width=115>
 </p>
 
- For example, the lifetime of light bulbs follows an exponential distribution with a hazard rate of 0.001 failures per hour of use, this means &lambda; = 0.001 (given h(x) = &lambda for exponential distribution). 
+ For example, the lifetime of light bulbs follows an exponential distribution with a hazard rate of 0.001 failures per hour of use, this means &lambda; = 0.001 (given h(x) = &lambda; for exponential distribution). 
 
  Then the Survival Distribution looks like
 
@@ -125,6 +126,70 @@ plot(time, survival, type = 'l', main='Exponential Survival Function')
 </p>
 
 
+### Weibull Distribution
+
+ Similar to the exponential distribution, Weibull distribution describes the time to failure. The probability density function (pdf) of an exponential distribution is
+
+<p align="center">
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/pdf_weibull.png" | width=115>
+</p>
+
+ And the Survival Distribution is given by
+ 
+<p align="center">
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/survival_weibull.png" | width=115>
+</p>
+
+ For example, the time in days to development of a tumor for rats exposed to a carcinogen follows a Weibull distribution with &alpha: = 1 and &lambda: = 0.001, the Survival Distribution looks like
+
+```{r}
+distribution <- 'weibull'
+alpha <- 1
+lambda <- 0.1
+time <- seq(0,50,1)
+survival <- sapply(time, S, distribution)
+plot(time, survival, type = 'l', main='Weibull Survival Function')
+```
+
+<p align="center">
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_weibull1.png" | width=550>
+</p>
+
+ Weibull gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, &alpha: will tell us how &lambda: behavies over time:
+
+* A value of &alpha: = 1 indicates that the failure rate ($lambda:) is constant over time, as it was shown at the previous graph
+
+* A value of &alpha: > 1 indicates that $lambda: increases over time, following the same example we notice that this caused an decrease of survival at the same time 'x' (given failure rate has increased) 
+
+```{r}
+distribution <- 'weibull'
+alpha <- 1.2
+lambda <- 0.1
+time <- seq(0,50,1)
+survival <- sapply(time, S, distribution)
+plot(time, survival, type = 'l', main='Weibull Survival Function')
+```
+
+<p align="center">
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_weibull2.png" | width=550>
+</p>
+
+* A value of &alpha: < 1 indicates that $lambda: decreases over time then survival will increase at the same time 'x' 
+
+```{r}
+distribution <- 'weibull'
+alpha <- 0.8
+lambda <- 0.1
+time <- seq(0,50,1)
+survival <- sapply(time, S, distribution)
+plot(time, survival, type = 'l', main='Weibull Survival Function')
+```
+
+<p align="center">
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_weibull3.png" | width=550>
+</p>
+
+
 
 ---
 ### References
@@ -132,6 +197,8 @@ plot(time, survival, type = 'l', main='Exponential Survival Function')
 1. Klein, J. P. & Moeschberger (1997). Survival Analysis. Springer: New
 York.
 2. https://en.wikipedia.org/wiki/Exponential_distribution
+3. https://en.wikipedia.org/wiki/Weibull_distribution
+
 
 
  
