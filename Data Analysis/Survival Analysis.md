@@ -1,9 +1,11 @@
----
-Title: "Survival Analysis"
-Author: "Delia Del Aguila"
----
 
-## Basic Quantities and Models
+### Table of Contents
+
+[Basic Quantities and Models](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/Survival%20Analysis.md#basic-quantities-and-models)
+* [Exponential Distribution](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/Survival%20Analysis.md#exponential-distribution)
+
+---
+### Basic Quantities and Models
 
  Let X be the time until some specified event.
 
@@ -77,7 +79,7 @@ Mean <- function(distribution) {
  Let's review each of them.
 
 
-### Exponential 
+### Exponential Distribution
 
  This distribution describes the time between events in a Poisson point process, i.e., a process in which events occur continuously and independently at a constant average rate named as "lambda" (failure rate in a survival point of view). The probability density function (pdf) of an exponential distribution is
 
@@ -104,11 +106,11 @@ plot(time, survival, type = 'l', main='Exponential Survival Function')
 ```
 
 <p align="center">
-  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_exp1.png" | width=500>
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_exp1.png" | width=550>
 </p>
 
 
-Notice that when lambda increases the probability for survival at same time 'x' decreases
+ Notice that when lambda increases the probability for survival at same time 'x' decreases
 
 ```{r}
 distribution <- 'exponential'
@@ -119,7 +121,7 @@ plot(time, survival, type = 'l', main='Exponential Survival Function')
 ```
 
 <p align="center">
-  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_exp2.png" | width=500>
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_exp2.png" | width=550>
 </p>
 
 
