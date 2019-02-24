@@ -14,13 +14,13 @@
  The basic quantity employed to describe time to event phenomena is the **Survival Function**, the probability of an individual surviving beyond time x (experiencing the event after time x). It is defined as
 
 <p align="center">
-  <b>S(x) 􏰗= Pr(X>x)</b>
+  <b>S(x) = Pr(X>x)</b>
 </p>
 
  Notice that when X is a continuous random variable, the survival function is the complement of the cumulative distribution function, that is, 
 
 <p align="center">
-  <b>S(x) = 1 􏰟- F(x)</b>
+  <b>S(x) = 1 - F(x)</b>
 </p>
         
 where F(x) = Pr(X<=x).
