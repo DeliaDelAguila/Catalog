@@ -1,2 +1,2 @@
 # Catalog
-Public Repository for showing R skills
+Public Repository for showing Data Science skills
