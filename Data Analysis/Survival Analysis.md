@@ -15,9 +15,45 @@ Let X be the time until some specified event.
 
  Notice that when X is a continuous random variable, the survival function is the complement of the cumulative distribution function, that is, 
       
-        S(x) = 1 􏰟- F(x)
+  **S(x) = 1 􏰟- F(x)**
         
-where F(x) = Pr(X<=x)  
+where F(x) = Pr(X<=x).
+
+ A fundamental quantity in survival analysis, is the **Hazard Function**. This function is also known as the conditional failure rate in reliability, the force of mortality in demography, the intensity function in stochastic processes, the age-specific failure rate in epidemiology, the inverse of the Mill’s ratio in economics, or simply as the hazard rate. If X is a continuous random variable, then
+ 
+  **h(x) = f(x) / S(x)**
+        
+In the following code you will find the Probability Density Function, Survival function, Hazard Rate and Mean of the more widely used parametric models. 
+
+```{r}
+Df <- function(x, distribution) { 
+```
+
+Let's review each of them.
+
+
+#### Exponetial 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
 
 
 
