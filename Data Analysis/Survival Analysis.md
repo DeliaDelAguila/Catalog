@@ -1,6 +1,6 @@
 ---
-title: "Survival Analysis"
-author: "Delia Del Aguila"
+Title: "Survival Analysis"
+Author: "Delia Del Aguila"
 ---
 
 ### Basic Quantities and Models
