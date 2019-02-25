@@ -131,7 +131,7 @@ plot(time, survival, type = 'l', main='Exponential Survival Function')
  Similar to the exponential distribution, Weibull distribution describes the time to failure. The probability density function (pdf) of an exponential distribution is
 
 <p align="center">
-  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/pdf_weibull.png" | width=115>
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/pdf_weibull.png" | width=230>
 </p>
 
  And the Survival Distribution is given by
