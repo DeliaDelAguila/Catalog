@@ -4,6 +4,7 @@
 [Basic Quantities and Models](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/Survival%20Analysis.md#basic-quantities-and-models)
 * [Exponential Distribution](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/Survival%20Analysis.md#exponential-distribution)
 * [Weibull Distribution](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/Survival%20Analysis.md#weibull-distribution)
+* [Log-logistic Distribution](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/Survival%20Analysis.md#log-logistic-distribution)
 
 ---
 ### Basic Quantities and Models
@@ -41,9 +42,10 @@ Df <- function(x, distribution) {
     distribution == 'exponential', lambda*exp(-lambda*x),
     ifelse (
     distribution == 'weibull', alpha*lambda*x^(alpha-1)*exp(-lambda*x^alpha),
-    #distribution == 'log_logitic' ~ alpha*x^(alpha-1)/
+    ifelse (
+    distribution == 'loglogistic', (alpha*lambda*x^(alpha-1))/(1+lambda*x^alpha)^2,
     'Sorry, distribution not found!'
-  ))
+  )))
 }
 
 # Survival function
@@ -52,8 +54,10 @@ S <- function(x, distribution) {
     distribution == 'exponential', exp(-lambda*x),
     ifelse(
     distribution == 'weibull', exp(-lambda*x^alpha),
+  ifelse (
+    distribution == 'loglogistic', 1/(1+lambda*x^alpha),
     'Sorry, distribution not found!'
-  ))
+  )))
 }
 
 # Hazard Rate
@@ -62,8 +66,10 @@ H <- function(x, distribution) {
     distribution == 'exponential', lambda,
   ifelse (
     distribution == 'weibull', alpha*lambda*x^(alpha-1),
+  ifelse (
+    distribution == 'loglogistic', (alpha*lambda*x^(alpha-1))/(1+lambda*x^alpha),
     'Sorry, distribution not found!'
-  ))
+  )))
 }
 
 # Mean
@@ -72,8 +78,10 @@ Mean <- function(distribution) {
     distribution == 'exponential', 1/lambda,
   ifelse (
     distribution == 'weibull', gamma(1+1/alpha)/lambda^(1/alpha),
+  ifelse (
+    distribution == 'loglogistic', pi/(sin(pi/alpha)*alpha*lambda^(1/alpha)),
     'Sorry, distribution not found!'
-  ))
+  )))
 }
 ```
 
@@ -140,7 +148,7 @@ plot(time, survival, type = 'l', main='Exponential Survival Function')
   <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/survival_weibull.png" | width=115>
 </p>
 
- For example, the time in days to development of a tumor for rats exposed to a carcinogen follows a Weibull distribution with &alpha: = 1 and &lambda: = 0.001, the Survival Distribution looks like
+ For example, the time in days to development of a tumor for rats exposed to a carcinogen follows a Weibull distribution with &alpha; = 1 and &lambda; = 0.001, the Survival Distribution looks like
 
 ```{r}
 distribution <- 'weibull'
@@ -155,11 +163,11 @@ plot(time, survival, type = 'l', main='Weibull Survival Function')
   <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_weibull1.png" | width=550>
 </p>
 
- Weibull gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, &alpha: will tell us how &lambda: behavies over time:
+ Weibull gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, &alpha; will tell us how &lambda; behavies over time:
 
-* A value of &alpha: = 1 indicates that the failure rate ($lambda:) is constant over time, as it was shown at the previous graph
+* A value of &alpha; = 1 indicates that the failure rate ($lambda;) is constant over time, as it was shown at the previous graph
 
-* A value of &alpha: > 1 indicates that $lambda: increases over time, following the same example we notice that this caused an decrease of survival at the same time 'x' (given failure rate has increased) 
+* A value of &alpha; > 1 indicates that $lambda; increases over time, following the same example we notice that this caused an decrease of survival at the same time 'x' (given failure rate has increased) 
 
 ```{r}
 distribution <- 'weibull'
@@ -174,7 +182,7 @@ plot(time, survival, type = 'l', main='Weibull Survival Function')
   <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_weibull2.png" | width=550>
 </p>
 
-* A value of &alpha: < 1 indicates that $lambda: decreases over time then survival will increase at the same time 'x' 
+* A value of &alpha; < 1 indicates that $lambda; decreases over time then survival will increase at the same time 'x' 
 
 ```{r}
 distribution <- 'weibull'
@@ -191,6 +199,47 @@ plot(time, survival, type = 'l', main='Weibull Survival Function')
 
 
 
+### Log-logistic Distribution
+
+ Log-logistic is the probability distribution of a random variable whose logarithm has a logistic distribution and in survival analysis is used as a parametric model for events whose rate increases initially and decreases later. Its probability density function is
+
+<p align="center">
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/pdf_loglogistic.png" | width=150>
+</p>
+
+where &alpha; > 1.
+
+ And its Survival Function is
+
+<p align="center">
+  <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/survival_loglogistic.png" | width=130>
+</p>
+
+ For example, the time to death (in days) following a kidney transplant follows a log logistic distribution with &alpha; = 1.5 and &lambda; = 0.01, then its Survival Function looks as
+
+```{r}
+distribution <- 'loglogistic'
+alpha <- 1.5
+lambda <- 0.01
+time <- seq(0,200,1)
+survival <- sapply(time, S, distribution)
+plot(time, survival, type = 'l', main='Log-logistic Survival Function')
+```
+
+
+```{r}
+distribution <- 'loglogistic'
+alpha <- 8
+lambda <- 1
+time <- seq(0,10,0.01)
+hazard <- sapply(time, H, distribution)
+plot(time, hazard, type = 'l', main='Exponential Survival Function')
+```
+
+
+
+
+
 ---
 ### References
 
@@ -198,6 +247,7 @@ plot(time, survival, type = 'l', main='Weibull Survival Function')
 York.
 2. https://en.wikipedia.org/wiki/Exponential_distribution
 3. https://en.wikipedia.org/wiki/Weibull_distribution
+4. https://en.wikipedia.org/wiki/Log-logistic_distribution
 
 
 
