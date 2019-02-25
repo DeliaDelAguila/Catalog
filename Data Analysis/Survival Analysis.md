@@ -165,9 +165,9 @@ plot(time, survival, type = 'l', main='Weibull Survival Function')
 
  Weibull gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, &alpha; will tell us how &lambda; behavies over time:
 
-* A value of &alpha; = 1 indicates that the failure rate ($lambda;) is constant over time, as it was shown at the previous graph
+* A value of &alpha; = 1 indicates that the failure rate (&lambda;) is constant over time, as it was shown at the previous graph
 
-* A value of &alpha; > 1 indicates that $lambda; increases over time, following the same example we notice that this caused an decrease of survival at the same time 'x' (given failure rate has increased) 
+* A value of &alpha; > 1 indicates that &lambda; increases over time, following the same example we notice that this caused an decrease of survival at the same time 'x' (given failure rate has increased) 
 
 ```{r}
 distribution <- 'weibull'
@@ -182,7 +182,7 @@ plot(time, survival, type = 'l', main='Weibull Survival Function')
   <img src="https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Analysis/images/graph_weibull2.png" | width=550>
 </p>
 
-* A value of &alpha; < 1 indicates that $lambda; decreases over time then survival will increase at the same time 'x' 
+* A value of &alpha; < 1 indicates that &lambda; decreases over time then survival will increase at the same time 'x' 
 
 ```{r}
 distribution <- 'weibull'
