@@ -19,3 +19,6 @@ We can summarize the whole process in nine steps:
 |7.|AB Test Size|Run a power analysis based on the following to decide sample size and how long you need to run the test: <ul><li>Minimum measurable difference (for example, 10%) </li> <li>False Negative (Power of the test: 1-FN): There is an effect but we do not see it (Falsely we say there is not a difference), default industry value FN < 20% </li> <li>False Positive (Significant Level): We see the significant result but there is not (Falsely we say there is a difference), default industry value FP < 5% </li></ul> R Code:<ul></ul> ```power.prop.test(p1=[KPI sample A], p2=[KPI expected with minimal increase], sig.level=[Significant Level], power=[Power of the Test]) ```|
 |8.|Run|Run the test for *at least* the time determine at Step 7|
 |9.|Results Analysis|Do conclusions |
+
+
+![alt text](TBD "AB Testing Flow")
