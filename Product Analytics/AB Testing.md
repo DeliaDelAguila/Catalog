@@ -21,4 +21,4 @@ We can summarize the whole process in nine steps:
 |9.|Results Analysis|Do conclusions |
 
 
-![alt text](TBD "AB Testing Flow")
+![alt text](https://github.com/DeliaDelAguila/Catalog/blob/master/Images/AB%20testing%20flow%20v2.PNG "AB Testing Flow")
