@@ -7,6 +7,9 @@ AB tetsing is a powerful methodology which helps when ww want
 ## Steps
 We can summarize the whole process in nine steps:
 
+![alt text](https://github.com/DeliaDelAguila/Catalog/blob/master/Images/AB%20testing%20flow%20v2.PNG "AB Testing Flow")
+
+
 |No.|Step|Objective|
 |---|----|---------|
 |0.|A/A Testing (Optional Dummy test)|For first time tests, it will help to check systematic biases and reducing future errors|
@@ -20,5 +23,3 @@ We can summarize the whole process in nine steps:
 |8.|Run|Run the test for *at least* the time determine at Step 7|
 |9.|Results Analysis|Do conclusions |
 
-
-![alt text](https://github.com/DeliaDelAguila/Catalog/blob/master/Images/AB%20testing%20flow%20v2.PNG "AB Testing Flow")
