@@ -7,4 +7,5 @@ The Catalog is divided in:
 * **Exploratory Data Analysis:** Data analysis mainly with R. Covering data reading, cleaning and visualization, analysis exploratory and explanatory. 
 * **Data Modeling:** Machine Learning models
 * **Data Warehouse:** Data governance and warehousing best practices 
+* **Theory:** Conceptual topics about Programming, Statistics and Maths
 * **Bibliography:** Good resources =) 
