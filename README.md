@@ -4,7 +4,7 @@ This repository is used as personal dictionary, it covers from basic to advanced
 
 The Catalog is divided in:
 * **Product Analytics:** Analysis and Best Practices for Improving Digital Products including Marketing and Retention strategies 
-* **Exploratory Data Analysis:** Data analysis mainly with R. Covering data reading, cleaning and visualization, analysis exploratory and explanatory. 
+* **Exploratory Data Analysis:** Data analysis mainly with R. Covering data loading, cleaning and visualization, analysis exploratory and explanatory. 
 * **Data Modeling:** Machine Learning models
 * **Data Warehouse:** Data governance and warehousing best practices 
 * **Theory:** Conceptual topics about Programming, Statistics and Maths
