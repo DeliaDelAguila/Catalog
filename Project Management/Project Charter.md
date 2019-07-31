@@ -1,4 +1,4 @@
-Project Charter
+# Project Charter
 
 A project charter is for giving an overview over each project, it is divided in following sections:
 
