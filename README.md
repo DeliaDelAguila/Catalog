@@ -11,6 +11,7 @@ The Catalog is divided in:
 * **[Data Architecture:](https://github.com/DeliaDelAguila/Catalog/tree/master/Data%20Architecture)** Data governance and warehousing best practices, focus on AWS technologies
 * **[Data Modeling:](https://github.com/DeliaDelAguila/Catalog/tree/master/Data%20Modeling)** Machine Learning Models
   * [Survival Analysis](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Modeling/Survival%20Analysis.md)
+  * [Forecasting](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Modeling/Forecasting.md)
 * **[Theory:](https://github.com/DeliaDelAguila/Catalog/tree/master/Theory)** Conceptual topics about Programming, Statistics and Maths
   * [Matrix Computing](https://github.com/DeliaDelAguila/Catalog/tree/master/Theory)
 * **[Code:](https://github.com/DeliaDelAguila/Catalog/tree/master/Code)** A R “utils” library that covers Exploratory Data Analysis, Data Preparation and Data Modeling.
