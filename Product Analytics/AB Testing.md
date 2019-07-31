@@ -1,3 +1,5 @@
+[Medium Post](https://medium.com/@del.aguila.delia/ab-testing-in-8-steps-36259197114f)
+
 ## Why and when we should run A/B testing?
 AB testing is a powerful methodology which helps when we want
 - Decide whether or not to launch a new feature
