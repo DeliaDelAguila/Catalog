@@ -1,5 +1,5 @@
 ## Why and when we should run A/B testing?
-AB tetsing is a powerful methodology which helps when ww want
+AB testing is a powerful methodology which helps when we want
 - Decide whether or not to launch a new feature
 - To quantify the impact of a feature or product
 - Compare data with intuition (gut feeling) to better understand how users respond to certain parts of product
@@ -23,3 +23,7 @@ We can summarize the whole process in nine steps:
 |8.|Run|Run the test for *at least* the time determine at Step 7|
 |9.|Results Analysis|Do conclusions |
 
+### References
+A/B Testing, A Data Science Perspective
+ Lisa Qian
+ O'Reilly Media, Inc. 2015
