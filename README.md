@@ -1,8 +1,8 @@
-# Catalog
+# Catalog Content
 
 This repository is used as personal dictionary, a great combination between Project Management and Data science. You will find here industry best practices, theoretical notes and code. 
 
-The Catalog is divided in:
+The Catalog contains the following:
 
 * **[Project Management:](https://github.com/DeliaDelAguila/Catalog/tree/master/Project%20Management)** Topics about managing BI and Data Projects
   * [Project Charter](https://github.com/DeliaDelAguila/Catalog/blob/master/Project%20Management/Project%20Charter.md)
