@@ -14,4 +14,6 @@ The Catalog contains the following:
   * [Forecasting](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Modeling/Forecasting.md)
 * **[Theory:](https://github.com/DeliaDelAguila/Catalog/tree/master/Theory)** Conceptual topics about Programming, Statistics and Maths
   * [Matrix Computing](https://github.com/DeliaDelAguila/Catalog/tree/master/Theory)
+  * [Regular Expressions](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/Regular%20Expressions.md)
+  * [SQL Functions](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/SQL%20Functions.md)
 * **[Code:](https://github.com/DeliaDelAguila/Catalog/tree/master/Code)** A R “utils” library that covers Exploratory Data Analysis, Data Preparation and Data Modeling.
