@@ -1,3 +1,5 @@
+# Regular Expressions
+
 This section covers the basics of Regular Expressions in Python
 
  |Use Case|Regex Example|True Input|
