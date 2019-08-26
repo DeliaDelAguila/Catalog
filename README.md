@@ -16,4 +16,6 @@ The Catalog contains the following:
   * [Matrix Computing](https://github.com/DeliaDelAguila/Catalog/tree/master/Theory)
   * [Regular Expressions](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/Regular%20Expressions.md)
   * [SQL Functions](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/SQL%20Functions.md)
-* **[Code:](https://github.com/DeliaDelAguila/Catalog/tree/master/Code)** A R “utils” library that covers Exploratory Data Analysis, Data Preparation and Data Modeling.
+* **[Code:](https://github.com/DeliaDelAguila/Catalog/tree/master/Code)**
+  * R
+  * Python
