@@ -12,6 +12,7 @@ The Catalog contains the following:
 * **[Data Modeling:](https://github.com/DeliaDelAguila/Catalog/tree/master/Data%20Modeling)** Machine Learning Models
   * [Survival Analysis](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Modeling/Survival%20Analysis.md)
   * [Forecasting](https://github.com/DeliaDelAguila/Catalog/blob/master/Data%20Modeling/Forecasting.md)
+  * Recommender Systems
 * **[Theory:](https://github.com/DeliaDelAguila/Catalog/tree/master/Theory)** Conceptual topics about Programming, Statistics and Maths
   * [Matrix Computing](https://github.com/DeliaDelAguila/Catalog/tree/master/Theory)
   * [Regular Expressions](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/Regular%20Expressions.md)
