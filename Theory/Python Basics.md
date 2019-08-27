@@ -1,4 +1,4 @@
-# Python Basics
+# Python Data Structures and Algorithms 
 
 This section covers the basics for programming at Python
 
