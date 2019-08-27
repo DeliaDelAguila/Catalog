@@ -1,5 +1,6 @@
 # Recommender Systems
 At this section we will learn how to create a Recommender System from scratch at Python.
+ To create a good recommender system we need a lot of accurate data, for building it you can use data as rating, consumptions or recurrence based on what you want to recommend (videos, ads, products, people...)
 
 ## Step 1: Setting your environment 
 
