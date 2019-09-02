@@ -18,7 +18,7 @@ The Catalog contains the following:
   * [Matrix Computing](https://github.com/DeliaDelAguila/Catalog/tree/master/Theory)
   * [Regular Expressions](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/Regular%20Expressions.md)
   * [SQL Functions](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/SQL%20Functions.md)
-  * [Python Basics](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/Python%20Basics.md)
+  * [Python Data Structures](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/Python%20Data%20Structures.md)
 * **[Code:](https://github.com/DeliaDelAguila/Catalog/tree/master/Code)**
   * R
   * Python
