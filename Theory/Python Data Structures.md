@@ -1,4 +1,4 @@
-# Python Data Structures and Algorithms 
+# Python Data Structures
 
 > *This lecture required basic concepts from Python as how to run the terminal and declare objects as lists*
 
