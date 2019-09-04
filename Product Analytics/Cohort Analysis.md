@@ -4,20 +4,22 @@
 
 Within digital products customer retention metrics are crucial to build an enduring relationship with your customers for ensuring the product is keeping alive in the future and understand potential risks given the entry of competitors.
 
-One of the first challenges when we are building cohort analysis is create our *cohort dataset*
+Creating a cohort analysis implies three main things:
 
+1. One metric that matters
+2. Segment your costumers
+3. Report vs Action
 
-1. Find the metrics that matter: People buying service, success actions that are not necessary revenue
-2. Segment your customers: You need to understand that your customers are different and not all can be treated and measured the same
+## Metric
+
 
 Cohort Dataset
 
 
 
-There are different known methods to perform and visualize  but first we need to 
-
-## Cohort
-In this method, customers are divided into homogenous groups (that is, cohorts) that share relevant segmentation attributes, such as sex or age.
-Purchases made by those groups are monitored monthly over a period of time, and a retention rate is calculated each month using the following formula:
-
 We understand fro retention rate = (number of customers purchasing in a given month)/(number of customers within the cohort at the starting point)
+
+
+## References
+
+https://blog.leanstack.com/3-rules-to-actionable-metrics-in-a-lean-startup-7cf483b0a762
