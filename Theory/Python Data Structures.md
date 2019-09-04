@@ -2,7 +2,7 @@
 
 > *This lecture requires basic concepts from Python as how to run the terminal and declare objects as lists*
 
-When programmers start writing code, they understand how to store simple variables of integers, floats, strings or a collection of them using lists which are the most common form to store any number of homogeneous information that has a certain sequence from the start of the list to the end of the list. You can search, insert, remove or iterate over all the elements with a quite easy way to program, but in the long run it will not give you always the most efficient code.  Given this, the most important part from each data structure is the particular behaviour each one has and how we can use them to optimize particular programs. We will cover five:
+When programmers start writing code, they understand how to store simple variables of integers, floats, strings or a collection of them using lists which are the most common form to store any number of homogeneous information that has a certain sequence from the start of the list to the end of the list. You can search, insert, remove or iterate over all the elements with a quite easy way to program, but in the long run it will not give you always the most efficient code.  Given this, the most important part of each data structure is the particular behavior each one has and how we can use them to optimize particular programs. We will cover five:
 
 1. [Stack](#stack)
 2. [Queue and Deque](#queue-and-deque)
@@ -12,7 +12,7 @@ When programmers start writing code, they understand how to store simple variabl
 
 ## Stack
 
-In stacks, the most recently placed element is the one you take off: *Last-In, First-Out*. When we think about a stack we really only think about two key operations:
+In stacks, the most recently placed element is the one you take off: *Last-In, First-Out*. When we think about a stack we only think about two key operations:
 
 - *append*: Add a new value
 - *pop*: Remove the last value added (if stack is not empty)
@@ -40,7 +40,7 @@ Different to the stack, when you add an element to a queue the next to be remove
 As for stacks, for queues we will have two main operations:
 
 - *append*: Add a new value
-- *popleft*: Remove the first value added (if queue is not empty)
+- *popleft*: Remove the first value added (if the queue is not empty)
 
 ```python
 >>> from collections import deque
@@ -79,9 +79,9 @@ deque(['B', 'A'])
 
 ## Tuple
 
-The tupples as the lists are sequence data types, where we will not just store the information but also we will process it in some order, having position 0 as the first postion of a list or a tuple. 
+The tuples as the lists are sequence data types, where we will not just store the information but also we will process it in some order, having position 0 as the first position of a list or a tuple. 
 
- In the other hand, opposite to the lists that stores homogeneous values, the tuple is an immutable heterogeneous structure. This means, 
+ On the other hand, opposite to the lists that store homogeneous values, the tuple is an immutable heterogeneous structure. This means, 
 
 1. Heterogeneous: It could have any number of values and they can be of different types
 ```python
