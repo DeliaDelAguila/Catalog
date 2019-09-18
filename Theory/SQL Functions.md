@@ -9,6 +9,9 @@ This section convers several funtions use for Text, dates and data cleaning. DBe
   |TRIM|Remove spaces or set of characters|TRIM([leading(beginning of string)\|trailing (end of string)\|both] <removing_string> from <main_string>)|trim(trailing 'st' from 'test')|te|
 |REGEXP_REPLACE|Replace substrings that match [REGEX](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/Regular%20Expressions.md)|REGEXP_REPLACE(<main_string>, regex, <replacement_string>,[, flags: i-case insensitive, g-global])|<li>REGEXP_REPLACE('ABC12345xyz','[[:digit:]]','') </li> <li>REGEXP_REPLACE('This  is    a   test   string','( ){2,}',' ')</li>|<li>ABCxyz</li> <li>This is a test string</li>|
 |SIMILAR TO|Pattern matches, similar to LIKE but using [REGEX](https://github.com/DeliaDelAguila/Catalog/blob/master/Theory/Regular%20Expressions.md)|string SIMILAR TO pattern|ID similar to '(P10_\|P110)'|P101, P102, P103, P104, P105, P106, P107, P108, P109, P110|
+| left
+
+
 
 ## Table Order
 
