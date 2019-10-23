@@ -5,7 +5,7 @@ This repository is used as personal dictionary, a great combination between Proj
 The Catalog contains the following:
 
 * **[Project Management:](https://github.com/DeliaDelAguila/Catalog/tree/master/Project%20Management)** Topics about managing BI, Analytics and Data Projects
-  * CRISP-DM
+  * [CRISP-DM](https://github.com/DeliaDelAguila/Catalog/blob/master/Project%20Management/CRISP-DM.md)
   * [Project Charter](https://github.com/DeliaDelAguila/Catalog/blob/master/Project%20Management/Project%20Charter.md)
 * **[Product Analytics:](https://github.com/DeliaDelAguila/Catalog/tree/master/Product%20Analytics)** Analysis and Best Practices for Improving Digital Products including Marketing and Retention strategies
   * [AB Testing](https://github.com/DeliaDelAguila/Catalog/blob/master/Product%20Analytics/AB%20Testing.md)
