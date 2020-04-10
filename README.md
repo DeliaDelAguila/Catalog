@@ -1,5 +1,6 @@
 # Catalog Content
 
+
 This repository is used as personal dictionary, a great combination between Project Management and Data science. You will find here industry best practices, theoretical notes and code. 
 
 The Catalog contains the following:
