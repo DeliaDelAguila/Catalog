@@ -5,7 +5,7 @@ This repository is used as personal reference, a great combination between Proje
 The Catalog is organized as following:
 
 **Project Management:** Topics about managing BI, Analytics and Data Projects
-* [Project Charter](https://github.com/DeliaDelAguila/Catalog/blob/master/Project%20Management/Project%20Charter.md)
+* [Project Charter](https://github.com/DeliaDelAguila/Catalog/blob/master/Project%20Charter.md)
 
 **Customer Analytics:** Methods to analyze users from contractual and non-contractual business
 
