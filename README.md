@@ -1,6 +1,4 @@
-Catalog
-
-This repository is used as personal reference, a great combination between Project Management and Data Science. You will find industry best practices, theoretical notes and code. 
+This repository is used as personal reference and as portfolio, a great combination between Project Management and Data Science. You will find industry best practices, theoretical notes and code. 
 
 The Catalog is organized as following:
 
